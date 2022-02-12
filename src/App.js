@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import audio from './assets/sword.wav';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
 
 	const die = () => {
 		setCount(count + 1);
+		new Audio(audio).play();
 	}
 	
 	const undo = () => {
