@@ -1,38 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+
+:root {
+  background: radial-gradient(#2B2622, #120F0C);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  background-image: linear-gradient(#C4A366,  #E5CAAA);
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 33%;
+  height: 4rem; 
+  border: 5px solid #9A9790;
+  border-radius: 5px;
+  background-color: rgba(20, 17, 8, .4);
+  color: #faf6e9;
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 20px;
+  transition: .4s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(20, 17, 8, 1);
+
 }
