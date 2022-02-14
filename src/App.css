@@ -8,11 +8,14 @@
   font-family: 'Cinzel', serif;
   letter-spacing: 3px;
   font-size: 2rem;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(./assets/eldenringlogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
@@ -20,6 +23,8 @@ h1 {
   background-clip: text;
   color: transparent;
   font-weight: 600;
+  text-align: center;
+  z-index: 1;
 }
 
 button {
@@ -32,12 +37,18 @@ button {
   font-family: 'Cinzel', serif;
   font-size: 1.5rem;
   font-weight: 500;
-  margin: 0 0 20px;
+  margin: 0 0 50px;
   transition: .4s ease-in-out;
+  z-index: 1;
 }
 
 button:hover {
   cursor: pointer;
   background-color: rgba(20, 17, 8, 1);
+  border: 5px solid #83807a;
+}
 
+#die-btn {
+  color: #E5CAAA;
+  font-weight: 700;
 }

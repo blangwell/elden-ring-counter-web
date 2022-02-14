@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import audio from './assets/sword.wav';
+import Particles from './Particles';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -31,9 +32,10 @@ function App() {
 
   return (
     <div className="App">
+			<Particles />
 			<h1>Deaths: {count}</h1>
-			<button onClick={die}>Die</button>
-			<button onClick={undo}>Undo</button>
+			<button onClick={die} id="die-btn">DIE</button>
+			{/* <button onClick={undo}>undo</button> */}
     </div>
   );
 }
