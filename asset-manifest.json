@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/elden-ring-counter-web/static/css/main.d186c6ae.css",
+    "main.js": "/elden-ring-counter-web/static/js/main.8c3e7b55.js",
+    "static/js/787.bdc1c446.chunk.js": "/elden-ring-counter-web/static/js/787.bdc1c446.chunk.js",
+    "static/media/eldenringlogo.png": "/elden-ring-counter-web/static/media/eldenringlogo.a5270428c611bec8779c.png",
+    "static/media/bonfire.mp3": "/elden-ring-counter-web/static/media/bonfire.2a13b6873cd21cfd6849.mp3",
+    "static/media/estus.mp3": "/elden-ring-counter-web/static/media/estus.057835eda256a6e1380d.mp3",
+    "static/media/dspain.mp3": "/elden-ring-counter-web/static/media/dspain.924b45e1340c371b46b6.mp3",
+    "index.html": "/elden-ring-counter-web/index.html",
+    "main.d186c6ae.css.map": "/elden-ring-counter-web/static/css/main.d186c6ae.css.map",
+    "main.8c3e7b55.js.map": "/elden-ring-counter-web/static/js/main.8c3e7b55.js.map",
+    "787.bdc1c446.chunk.js.map": "/elden-ring-counter-web/static/js/787.bdc1c446.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d186c6ae.css",
+    "static/js/main.8c3e7b55.js"
+  ]
+}
