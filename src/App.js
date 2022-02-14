@@ -33,8 +33,9 @@ function App() {
   return (
     <div className="App">
 			<Particles />
+			<div className="overlay"></div>
 			<h1>Deaths: {count}</h1>
-			<button onClick={die} id="die-btn">DIE</button>
+			<button onClick={die} id="die-btn">Die</button>
 			{/* <button onClick={undo}>undo</button> */}
     </div>
   );
