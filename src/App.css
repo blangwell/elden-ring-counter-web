@@ -25,7 +25,7 @@
   z-index: 0
 }
 
-h1, button, #undo {
+h1, button, #undo, #undo-reset-container, i {
   z-index: 1;
 }
 
@@ -51,13 +51,6 @@ button {
   transition: .2s ease-in-out;
   font-weight: 700;
   letter-spacing: 1px;
-
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgba(20, 17, 8, .8);
-  color: rgb(235, 0, 0);
 }
 
 #undo-reset-container {
@@ -65,7 +58,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
 #undo, #reset, #vr {
@@ -74,7 +66,30 @@ button:hover {
   font-weight: 500;
 }
 
-#undo:hover, #reset:hover {
+i {
+  color: white;
   cursor: pointer;
-  color: #E5CAAA;
+  transition: .2s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+@media (hover: hover) {
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(20, 17, 8, .8);
+    border-color: #E5CAAA;
+    color: rgb(235, 0, 0);
+  }
+  #undo:hover, #reset:hover {
+    cursor: pointer;
+    color: #E5CAAA;
+  }
+  i:hover {
+    cursor: pointer;
+    color: #E5CAAA;
+
+  }
 }

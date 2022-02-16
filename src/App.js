@@ -2,17 +2,20 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Particles from './Particles';
 import estus from './assets/estus.mp3';
-import dspain from './assets/dspain.mp3';
 import bonfire from './assets/bonfire.mp3';
+import youdied from './assets/youdied.mp3';
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 function App() {
 	const [count, setCount] = useState(0);
 	const [audio] = useState({
 		estus: new Audio(estus),
-		dspain: new Audio(dspain),
-		bonfire: new Audio(bonfire)
+		bonfire: new Audio(bonfire),
+		youdied: new Audio(youdied)
 	});
-	const [soundPlaying, setSoundPlaying] = useState(false);
+	const [currentAudio, setCurrentAudio] = useState(null);
+	const [muted, setMuted] = useState(true);
 
 	useEffect(() => {
 		let countFromStorage = localStorage.getItem("deathcount");
@@ -23,34 +26,51 @@ function App() {
 		}
 	}, []);
 
+	// set local storage count
 	useEffect(() => {
 		localStorage.setItem("deathcount", count.toString());
 	}, [count]);
 
+	// set soundPlaying to false when sound ended
 	useEffect(() => {
 		Object.keys(audio).forEach(key => {
-			audio[key].addEventListener("ended", () => setSoundPlaying(false));
+			audio[key].addEventListener("ended", () => setCurrentAudio(null));
 		})
-	}, [soundPlaying]);
+	}, [audio]);
+
+	// conditionally mute audio
+	useEffect(() => {
+			Object.keys(audio).forEach(key => {
+				audio[key].muted = muted;
+			})
+	}, [muted, audio])
+
+
+	const playAudio = sound => {
+		if (currentAudio) {
+			currentAudio.pause();
+			currentAudio.currentTime = 0;
+		}
+		sound.play();
+		setCurrentAudio(sound);
+	}
+
 
 	const die = () => {
 		setCount(count + 1);
-		audio.dspain.play();
-		setSoundPlaying(true);
+		playAudio(audio.youdied);
 	}
 
 	const undo = () => {
 		if (count > 0) {
 			setCount(count - 1);
-			audio.estus.play();
-			setSoundPlaying(true);
+			playAudio(audio.estus);
 		}
 	}
 
 	const reset = () => {
 		setCount(0);
-		audio.bonfire.play();
-		setSoundPlaying(true);
+		playAudio(audio.bonfire);
 	}
 
 	return (
@@ -63,6 +83,7 @@ function App() {
 				<p onClick={undo} id="undo">Undo&nbsp;</p><p id="vr">|</p>
 				<p onClick={reset} id="reset">&nbsp;Reset</p>
 			</div>
+			<i onClick={() => setMuted(!muted)} className={muted ? "bi bi-volume-mute" : "bi bi-volume-up"} aria-label="Mute"></i>
 		</div>
 	);
 }
