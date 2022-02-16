@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.90df8077.css",
-    "main.js": "/static/js/main.3c1a7296.js",
+    "main.css": "/static/css/main.e88d14e4.css",
+    "main.js": "/static/js/main.b22db8a8.js",
     "static/js/787.bdc1c446.chunk.js": "/static/js/787.bdc1c446.chunk.js",
     "static/media/eldenringlogo.png": "/static/media/eldenringlogo.a5270428c611bec8779c.png",
+    "static/media/youdied.mp3": "/static/media/youdied.e6e655bd6ffd28c464e2.mp3",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
     "static/media/bonfire.mp3": "/static/media/bonfire.2a13b6873cd21cfd6849.mp3",
     "static/media/estus.mp3": "/static/media/estus.057835eda256a6e1380d.mp3",
-    "static/media/dspain.mp3": "/static/media/dspain.924b45e1340c371b46b6.mp3",
     "index.html": "/index.html",
-    "main.90df8077.css.map": "/static/css/main.90df8077.css.map",
-    "main.3c1a7296.js.map": "/static/js/main.3c1a7296.js.map",
+    "main.e88d14e4.css.map": "/static/css/main.e88d14e4.css.map",
+    "main.b22db8a8.js.map": "/static/js/main.b22db8a8.js.map",
     "787.bdc1c446.chunk.js.map": "/static/js/787.bdc1c446.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90df8077.css",
-    "static/js/main.3c1a7296.js"
+    "static/css/main.e88d14e4.css",
+    "static/js/main.b22db8a8.js"
   ]
 }
