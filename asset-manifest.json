@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e88d14e4.css",
+    "main.css": "/static/css/main.2922f6b1.css",
     "main.js": "/static/js/main.b22db8a8.js",
     "static/js/787.bdc1c446.chunk.js": "/static/js/787.bdc1c446.chunk.js",
     "static/media/eldenringlogo.png": "/static/media/eldenringlogo.a5270428c611bec8779c.png",
@@ -10,12 +10,12 @@
     "static/media/bonfire.mp3": "/static/media/bonfire.2a13b6873cd21cfd6849.mp3",
     "static/media/estus.mp3": "/static/media/estus.057835eda256a6e1380d.mp3",
     "index.html": "/index.html",
-    "main.e88d14e4.css.map": "/static/css/main.e88d14e4.css.map",
+    "main.2922f6b1.css.map": "/static/css/main.2922f6b1.css.map",
     "main.b22db8a8.js.map": "/static/js/main.b22db8a8.js.map",
     "787.bdc1c446.chunk.js.map": "/static/js/787.bdc1c446.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e88d14e4.css",
+    "static/css/main.2922f6b1.css",
     "static/js/main.b22db8a8.js"
   ]
 }
